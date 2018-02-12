@@ -17,7 +17,7 @@ deploy:
   secret_access_key:
     secure: "$SECRETACCESSKEY"
   region: "eu-central-1b"  
-  app: "aws-ebs-tut-dev"
+  app: "aws_ebs_tut"
   env: "aws-ebs-tut-dev"
   bucket_name: "elasticbeanstalk-eu-central-1-707675293479"
   on:
