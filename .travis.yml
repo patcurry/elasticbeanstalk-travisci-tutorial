@@ -10,3 +10,15 @@ services:
 
 after_deploy:
   - echo "done deploying"
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESSKEYID
+  secret_access_key:
+    secure: "$SECRETACCESSKEY"
+  region: "eu-central-1b"  
+  app: "aws-ebs-tut-dev"
+  env: "aws-ebs-tut-dev"
+  bucket_name: "elasticbeanstalk-eu-central-1-707675293479"
+  on:
+    branch: master
